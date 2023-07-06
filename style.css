@@ -1,0 +1,337 @@
+/* ****** Global ******* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+.nav-bar {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navLinks li {
+    margin: 0 30px;
+}
+
+.active {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./Adventure Photos/banner 5.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 70px;
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 280px;
+    height: 4px;
+    background-color: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background-color: red;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.menuBtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 48px;
+    cursor: pointer;
+    display: none;
+}
+
+/* *** Events *** */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(42, 42, 121);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event .row {
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 3vmin;
+    color: rgb(50, 50, 59);
+    margin: 20px auto;
+}
+
+p {
+    color: rgb(83, 79, 79);
+    padding: 0px 40px;
+}
+
+.event .ctn {
+    margin-top: 30px;
+}
+
+.row .col img {
+    width: 80%;
+}
+
+/* ***** Explore ***** */
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./Adventure Photos/explore 1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.explore-content {
+    width: 59%;
+    padding: 50px;
+    padding-top: 190px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content .line {
+    width: 300px;
+    height: 5px;
+    background-color: red;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.explore-content h1 {
+    text-transform: uppercase;
+    font-size: 7vmin;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+}
+
+.explore-content p {
+    color: white;
+}
+
+.explore-content .ctn {
+    margin-top: 40px;
+}
+
+.content-col {
+    width: 40%;
+}
+
+.image-col {
+    width: 60%;
+}
+
+/* ***** Tours ***** */
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.content-col h1 {
+    font-size: 8vmin;
+    color: rgb(50, 50, 104);
+    text-transform: uppercase;
+}
+
+.content-col .line {
+    margin-left: -1px;
+}
+
+.content-col p {
+    margin: 30px auto;
+    padding: 0;
+}
+
+.content-col .ctn {
+    margin-left: -100px;
+}
+
+/* *** Footer *** */
+footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: black;
+    text-align: center;
+    padding: 1px;
+}
+
+footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+
+}
+
+/* Mobile device */
+@media only screen and (max-width:850px) {
+    .menuBtn {
+        display: block;
+    }
+
+    .nav-bar {
+        padding: 0;
+    }
+
+    .line {
+        width: 180px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(37, 37, 194);
+        margin: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0;
+    }
+
+    .navLinks li {
+        margin: 30px auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    /* *** Explore *** */
+
+    .explore-content {
+        width: 100%;
+        padding: 25px;
+        padding-top: 100px;
+    }
+
+    .explore-content h1 {
+        font-size: 6vmin;
+    }
+
+    .explore-content .line {
+        width: 250px;
+    }
+
+    .explore-content p {
+        clear: both;
+        text-align: center;
+    }
+
+    /* *** Tours *** */
+    .tours .col {
+        width: 100%;
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* **** Animations **** */
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.ctn:hover {
+    background-color: whitesmoke;
+    color: red;
+    box-shadow: 3px 3px 30px 1px black;
+}
+
+li:hover {
+    color: red;
+}
